@@ -127,6 +127,7 @@ print(paste('mean = ', mean(my1000$k4),' sd = ',sd(my1000$k4)))
 
 ```
 The standard deviation is now a quarter of what it was before by 10. We expect 10 and we get r sd (my1000$k4
+the expected amount is slightly off from what was given.
 
 ```{r}
 numb = 25
@@ -148,7 +149,7 @@ p + ggtitle("n = 25") +
 print(paste('mean = ', mean(my1000$k5),' sd = ',sd(my1000$k5)))
 
 ```
-We expect 8 and got r sd(my1000$k5)
+We expect 8 and got r sd(my1000$k5) The standard deviation number shrinks with the numb value aswell.
 
 
 ```{r}
@@ -171,7 +172,7 @@ p + ggtitle("n = 36") +
 print(paste('mean = ', mean(my1000$k6),' sd = ',sd(my1000$k6)))
 
 ```
-
+we expect 6 and we gor 'r sd (my1000$k6) The expected value is slightly off and can be rounded to the nearest 7.
 
 
 ### In this case the stdev was cut in half because the sample size was four. This is what the central limit theorem says. There are also 5 peaks. They go from FFFF,to FFFM, to FFMM to FMMM and finally MMMM.
