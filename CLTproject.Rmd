@@ -88,19 +88,19 @@ numb = 9
 Hdata = Homers_data[sample(1:1000,size=numb*1000, replace=T),"kkardashtemp"]
 mdata  <-matrix(Hdata,nrow=1000,ncol=numb)
 x.avg <- apply(mdata,1,mean)
-my1000$k5 = x.avg
+my1000$k4 = x.avg
 
 
-p <- ggplot(my1000, aes(x=k5),col=sex) + 
+p <- ggplot(my1000, aes(x=k4),col=sex) + 
   geom_density() +
 
 # Add mean line
- geom_vline(aes(xintercept=mean(k5)),
+ geom_vline(aes(xintercept=mean(k4)),
             color="blue", linetype="dashed", size=1)
-p + ggtitle("n = 5") +
+p + ggtitle("n = 9") +
   xlab("temperature") + ylab(" density")
 
-print(paste('mean = ', mean(my1000$k5),' sd = ',sd(my1000$k5)))
+print(paste('mean = ', mean(my1000$k4),' sd = ',sd(my1000$k4)))
 
 ```
 
